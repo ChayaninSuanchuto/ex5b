@@ -30,6 +30,7 @@
 		</form>
 	</div>
 	<div id="result" style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;">
+		
 	</div>
 	
 	<script>
@@ -71,7 +72,8 @@
 				if(!validate(t)) return;
 
 			   var cv = conversion(t,u);
-			   alert("Temperature is "+cv.t1+" in "+cv.u1);
+
+			  document.getElementById('result').innerHTML = "Temperature is " + cv.t1.toFixed(2) + " in " + cv.u1;
 			});
 		});
 	</script>
